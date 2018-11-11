@@ -8,6 +8,7 @@ sample submission
 # import all modules been used 
 import pandas as pd
 import numpy as np
+import my_algorithm.processor.calculate_transshipment_decision as calculate_transshipment_decision;
 
 class UserPolicy:
     def __init__(self, initial_inventory, inventory_replenishment, sku_demand_distribution, sku_cost  ):
@@ -30,7 +31,8 @@ class UserPolicy:
         '''
         # Your algorithms here
         # simple rule: no transshipment at all
-        transshipment_decision = np.zeros((5, 1000)).astype(int)
+        # transshipment_decision = np.zeros((5, 1000)).astype(int)
+        transshipment_decision = calculate_transshipment_decision.calculate_w()
 
         return transshipment_decision
 

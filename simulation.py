@@ -117,7 +117,7 @@ if __name__ == '__main__':
 
     # 参赛者提交的脚本文件名
     # contestant's submission
-    from submission import UserPolicy
+    from sample_submission.submission import UserPolicy
 
     # 参数设置
     np.random.seed(1)
